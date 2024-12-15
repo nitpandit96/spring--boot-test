@@ -28,4 +28,8 @@ public class EmployeeController {
     public void signIn(@RequestBody String empId, String pass){
         iEmployeeService.signIn(empId,pass);
     }
+    @PostMapping("/save")
+    public ResponseEntity<String>  sayHello(){
+        return ResponseEntity.ok("This is test Controller");
+    }
 }
